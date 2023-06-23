@@ -1,49 +1,71 @@
-# Личный проект «Что посмотреть»
+# "What to watch"
 
-* Студент: [Ярослав Новик](https://up.htmlacademy.ru/react/12/user/2120755).
-* Наставник: `Неизвестно`.
+Repository for applications of the `What to watch` project, includes the front-end part of application.
 
----
+Frontend:
 
-_Не удаляйте и не изменяйте папки и файлы:_
-_`.editorconfig`, `.gitattributes`, `.gitignore`._
+## Application for choosing interesting movies.
 
----
+The site allows you to view different movies from database, save them, post reviews.
+The site consists of 3 main pages:
 
-### Памятка
+1. Login
+2. Main (Page with all movies uploaded from database, also page introducing Promo movie).
+3. Film (Page with overview/details/reviews of choosen film).
+4. Add review (Page with form to post review for choosen movie)
+5. Player (Page with fullscreen player. Allows to watch trailer of choosen movie)
+6. My list (Protected page for only authorized users. Allows to save user favorite movies)
 
-#### 1. Зарегистрируйтесь на Гитхабе
+The site is adapted for use with Screen Reader.
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+### Used technologies:
 
-#### 2. Создайте форк
+TYPESCRIPT/REACT/REDUX/JEST
 
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+1. Work with API
+2. Registration, Authentication, Identification (JWT Token)
+3. Axios
+4. React (useState, useEffect, useRef )
+5. ReactRouter v.6.4.0
+6. ReduxToolKit
+7. Tostify
 
-<img width="769" alt="Press 'Fork'" src="https://cloud.githubusercontent.com/assets/259739/20264045/a1ddbf40-aa7a-11e6-9a1a-724a1c0123c8.png">
+### _What should be finished _:
 
-Получится вот так:
+1. Jest test for components and async functions.
 
-<img width="769" alt="Forked" src="https://cloud.githubusercontent.com/assets/259739/20264122/f63219a6-aa7a-11e6-945a-89818fc7c014.png">
+# "Что посмотреть"
 
-#### 3. Клонируйте репозиторий на свой компьютер
+Репозиторий для приложения проекта `Что посмотреть`, включающий фронтенд часть приложения.
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
+Frontend
 
-<img width="769" alt="SSH" src="https://cloud.githubusercontent.com/assets/259739/20264180/42704126-aa7b-11e6-9ab4-73372b812a53.png">
+## Приложение для выбора интересных фильмов.
 
-Клонировать репозиторий можно так:
+Сайт позволяет просматривать информацию фильмах, оставлять комментарии, сохранять понравившиеся.
+Сайт состоит из 3х главных секций:
 
-```
-git clone SSH-адрес_вашего_форка
-```
+1. Login
+2. Main (Страница со всеми загруженными с сервера фильмами. Так же представляет промо фильм)
+3. Film (Страница с общими сведениями, деталями и оценками выбранного фильма.)
+4. Add review (Страница с формой для отправки рецензии по выбранному фильму.)
+5. Player (Страница с полноэкранным плеером, для просмотра трейлера выбранного фильма.)
+6. My list (Защищенная страница, для авторизированных пользователей. Позволяет отображать сохраненные пользователем фильмы.)
 
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+Этот сайт адаптирован для работы со Скрин Ридерами.
 
-#### 4. Начинайте обучение!
+### Использованные технологии:
 
----
+TYPESCRIPT/REACT/REDUX/JEST
 
-<a href="https://htmlacademy.ru/intensive/react"><img align="left" width="50" height="50" title="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/react/logo-for-github.png"></a>
+1. Work with API
+2. Registration, Authentication, Identification (JWT Token)
+3. Axios
+4. React (useState, useEffect, useRef )
+5. ReactRouter v.6.4.0
+6. ReduxToolKit
+7. Tostify
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[React. Разработка сложных клиентских приложений](https://htmlacademy.ru/intensive/react)» от [HTML Academy](https://htmlacademy.ru).
+### _Что следует доделать_:
+
+3. Jest тесты для компонентов и асинхронных функций

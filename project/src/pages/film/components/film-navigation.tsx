@@ -1,19 +1,26 @@
 import { filmNavigationOptions } from '../../../utils/data';
 
-function FilmNavigation(): JSX.Element {
+type TabsProps = {
+  onTabClick: (option: string) => void;
+  activeTab: string | null;
+};
+
+function FilmNavigation({ onTabClick, activeTab = 'overview' }: TabsProps): JSX.Element {
+  function handleTabClick(option: string) {
+    onTabClick(option.toLowerCase());
+  }
+
   return (
     <nav className="film-nav film-card__nav">
       <ul className="film-nav__list">
         {filmNavigationOptions.map((option) =>
           (
-            <li className="film-nav__item" key={option}>
-              <a href="#" className="film-nav__link">{option}</a>
+            <li onClick={() => handleTabClick(option)} className={`film-nav__item ${activeTab === option.toLowerCase() ? 'film-nav__item--active' : ''}`} key={option}>
+              <button className="film-nav__link" style={{backgroundColor: 'transparent', border: 'none'}}>{option}</button>
             </li>))}
-        {/* <li className="film-nav__item film-nav__item--active">
-          <a href="#" className="film-nav__link">Details</a>
-        </li> */}
       </ul>
     </nav>
   );
 }
 export default FilmNavigation;
+
