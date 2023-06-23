@@ -4,8 +4,7 @@ export function genreSorter(films: FilmType[] | undefined) {
   if (films === undefined) {
     return [];
   }
-  const genreList = [...new Set(films.map((movie) => movie.genre))];
-  genreList.unshift('All genres');
+  const genreList = ['All genres', ...new Set(films.map((movie) => movie.genre))];
   if (genreList.length > 10) {
     genreList.length = 10;
   }
