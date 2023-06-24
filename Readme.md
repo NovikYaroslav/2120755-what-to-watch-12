@@ -1,5 +1,7 @@
 # "What to watch"
 
+Link to preview: https://2120755-what-to-watch-12.vercel.app/
+
 Repository for applications of the `What to watch` project, includes the front-end part of application.
 
 Frontend:
